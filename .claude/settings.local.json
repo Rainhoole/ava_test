@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo:*)",
+      "Bash(curl:*)",
+      "WebSearch",
+      "WebFetch(domain:dryer-boundary-this-anybody.trycloudflare.com)",
+      "Bash(unset:*)",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(pip search:*)",
+      "Bash(pip index:*)",
+      "WebFetch(domain:pypi.org)",
+      "Bash(conda activate:*)",
+      "Bash(/Users/cppppppp/miniconda3/bin/pip install:*)",
+      "Bash(/Users/cppppppp/miniconda3/bin/python:*)",
+      "Bash(/Users/cppppppp/miniconda3/lib/python3.13/site-packages/claude_agent_sdk/_bundled/claude:*)",
+      "Bash(ls:*)"
+    ]
+  }
+}

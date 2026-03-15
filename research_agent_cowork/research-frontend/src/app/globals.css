@@ -1,0 +1,825 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sidebar-bg: #0A0A0A;
+  --sidebar-hover: #1A1A1A;
+  --sidebar-border: #1F1F1F;
+  --main-bg: #000000;
+  --main-secondary: #0A0A0A;
+  --main-input: #111111;
+  --accent-primary: #45BFFF;
+  --accent-secondary: #3AADEF;
+  --accent-muted: #2A6F9E;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B0B0B0;
+  --text-muted: #666666;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  background: var(--main-bg);
+  color: var(--text-primary);
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.01em;
+}
+
+.font-serif {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+/* Scrollbar styling - minimal dark */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* Markdown content styling - Dark theme */
+.markdown-content {
+  @apply text-gray-200 leading-relaxed;
+}
+
+/* ============================================================
+   Report page enhancement: Apple-like structure + TOC sidebar
+   ============================================================ */
+.report-enhanced {
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(69, 191, 255, 0.16), transparent 55%),
+    radial-gradient(900px 400px at 95% -20%, rgba(255, 255, 255, 0.08), transparent 55%);
+}
+
+.report-sidebar {
+  @apply space-y-4;
+}
+
+/* ============================================================
+   Workspace shell alignment (research-buddy-dash inspired)
+   ============================================================ */
+.workspace-shell {
+  background:
+    radial-gradient(1400px 700px at -10% -20%, rgba(69, 191, 255, 0.1), transparent 60%),
+    radial-gradient(900px 500px at 110% -20%, rgba(119, 232, 255, 0.08), transparent 55%),
+    #030507;
+}
+
+.workspace-sidebar {
+  background:
+    linear-gradient(180deg, rgba(10, 12, 16, 0.95) 0%, rgba(8, 9, 13, 0.96) 100%);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.workspace-main {
+  background:
+    radial-gradient(900px 300px at 10% -20%, rgba(69, 191, 255, 0.08), transparent 60%),
+    #000000;
+}
+
+.workspace-task-header {
+  @apply rounded-2xl border p-4;
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.workspace-empty {
+  background:
+    radial-gradient(600px 280px at 50% 18%, rgba(69, 191, 255, 0.08), transparent 70%);
+}
+
+/* ============================================================
+   Structured report layout classes
+   ============================================================ */
+.rb-hero {
+  @apply rounded-3xl border p-6 md:p-8;
+  background:
+    linear-gradient(160deg, rgba(14, 17, 24, 0.96) 0%, rgba(8, 10, 14, 0.95) 100%);
+  border-color: rgba(255, 255, 255, 0.11);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.rb-hero-pill {
+  @apply inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs uppercase tracking-wide;
+  color: #9fdfff;
+  background: rgba(69, 191, 255, 0.12);
+  border: 1px solid rgba(69, 191, 255, 0.25);
+}
+
+.rb-hero h1 {
+  @apply mt-4 text-2xl md:text-3xl text-white break-words;
+  font-family: var(--font-serif), Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+.rb-meta-panel {
+  @apply mt-6 rounded-2xl border p-4;
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.11);
+}
+
+.rb-tag-wrap {
+  @apply mt-4 flex flex-wrap gap-2;
+}
+
+.rb-tag {
+  @apply px-2.5 py-1 rounded-full text-xs border;
+  color: #a9e4ff;
+  border-color: rgba(69, 191, 255, 0.35);
+  background: rgba(69, 191, 255, 0.08);
+}
+
+.rb-section {
+  @apply rounded-2xl border overflow-hidden;
+  background: rgba(10, 11, 15, 0.92);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.rb-section-toggle {
+  @apply w-full px-5 py-4 flex items-center justify-between text-left gap-3;
+  transition: background-color 0.2s ease;
+}
+
+.rb-section-heading {
+  @apply min-w-0;
+}
+
+.rb-section-toggle:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.rb-section-heading h2 {
+  @apply text-lg text-white;
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+.rb-section-heading span {
+  @apply text-xs text-gray-500 mt-1 block;
+}
+
+.rb-section-body {
+  @apply px-5 pb-5;
+}
+
+.rb-tldr {
+  @apply rounded-xl p-4 border mb-5;
+  background: rgba(69, 191, 255, 0.08);
+  border-color: rgba(69, 191, 255, 0.25);
+}
+
+.rb-tldr span {
+  @apply text-xs uppercase tracking-wide font-semibold;
+  color: #9fdfff;
+}
+
+.rb-tldr p {
+  @apply mt-2 text-sm text-gray-200 leading-relaxed;
+}
+
+.rb-card {
+  @apply rounded-2xl border p-4 overflow-hidden;
+  background: rgba(8, 9, 12, 0.92);
+  border-color: rgba(255, 255, 255, 0.11);
+}
+
+.rb-card-header {
+  @apply flex items-center justify-between gap-3 mb-3;
+}
+
+.rb-card-header h2,
+.rb-card-header h3 {
+  @apply text-base text-white font-semibold;
+}
+
+.rb-card-header span {
+  @apply text-xs text-gray-500 uppercase tracking-wide;
+}
+
+.rb-toc-list {
+  @apply space-y-1;
+}
+
+.rb-toc-item {
+  @apply w-full text-left px-3 py-2 rounded-lg text-sm text-gray-400 hover:text-white hover:bg-white/5 transition-colors flex;
+}
+
+.rb-toc-item.is-active {
+  @apply text-white;
+  background: rgba(69, 191, 255, 0.14);
+  border-left: 2px solid rgba(69, 191, 255, 0.85);
+}
+
+.rb-score-list {
+  @apply space-y-3;
+}
+
+.rb-score-row {
+  @apply space-y-1;
+}
+
+.rb-score-top {
+  @apply flex justify-between gap-2 text-sm text-gray-300;
+}
+
+.rb-score-top > span {
+  @apply min-w-0 truncate;
+}
+
+.rb-score-top strong {
+  @apply text-white text-sm flex-shrink-0;
+}
+
+.rb-score-track {
+  @apply h-1.5 rounded-full overflow-hidden;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.rb-score-track span {
+  display: block;
+  height: 100%;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #45bfff 0%, #6fd4ff 100%);
+}
+
+.rb-timeline {
+  @apply space-y-2;
+}
+
+.rb-timeline-item {
+  @apply flex items-start gap-2 min-w-0;
+}
+
+.rb-timeline-item > div:last-child {
+  @apply min-w-0;
+}
+
+.rb-timeline-dot {
+  @apply w-6 h-6 rounded-full flex items-center justify-center mt-0.5;
+  background: rgba(69, 191, 255, 0.15);
+  color: #9fdfff;
+  flex-shrink: 0;
+}
+
+.rb-timeline-item strong {
+  @apply text-xs text-white block;
+}
+
+.rb-timeline-item p {
+  @apply text-xs text-gray-400 leading-relaxed break-words;
+}
+
+.rb-meta-grid {
+  @apply grid grid-cols-2 gap-2;
+}
+
+.rb-meta-grid div {
+  @apply rounded-xl border px-3 py-2;
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.rb-meta-grid span {
+  @apply text-[10px] uppercase tracking-wide text-gray-500 block;
+}
+
+.rb-meta-grid strong {
+  @apply text-base text-white font-semibold;
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+.rb-source-mini {
+  @apply space-y-1;
+}
+
+.rb-source-mini a {
+  @apply rounded-lg px-2.5 py-1.5 text-xs border flex items-center justify-between gap-2 transition-colors min-w-0;
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #9ea3ae;
+}
+
+.rb-source-mini a span {
+  @apply truncate;
+}
+
+.rb-source-mini a:hover {
+  color: #d8dbe1;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.rb-empty {
+  @apply text-xs text-gray-500;
+}
+
+.markdown-content h1 {
+  @apply text-2xl font-bold mt-8 mb-4 text-white pb-2 border-b border-white/10
+         flex items-center gap-3;
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+.markdown-content h1::before {
+  content: '';
+  width: 3px;
+  height: 24px;
+  background: #45BFFF;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.markdown-content h2 {
+  @apply text-xl font-semibold mt-6 mb-3 text-white;
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+.markdown-content h3 {
+  @apply text-lg font-medium mt-5 mb-2 text-white;
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+.markdown-content h4 {
+  @apply text-base font-medium mt-4 mb-2 text-white;
+}
+
+.markdown-content p {
+  @apply my-3 leading-relaxed;
+}
+
+.markdown-content ul {
+  @apply my-3 pl-6 list-disc;
+}
+
+.markdown-content ol {
+  @apply my-3 pl-6 list-decimal;
+}
+
+.markdown-content li {
+  @apply my-1;
+}
+
+.markdown-content li > ul,
+.markdown-content li > ol {
+  @apply my-1;
+}
+
+.markdown-content code {
+  @apply bg-white/10 px-1.5 py-0.5 rounded text-sm text-sky-300 font-mono;
+}
+
+.markdown-content pre {
+  @apply bg-white/5 text-gray-200 p-4 rounded-xl overflow-x-auto my-4 border border-white/10;
+}
+
+.markdown-content pre code {
+  @apply bg-transparent text-gray-200 p-0;
+}
+
+.markdown-content a {
+  color: #45BFFF;
+  @apply underline underline-offset-2 transition-colors;
+}
+
+.markdown-content a:hover {
+  color: #6DD0FF;
+}
+
+.markdown-content blockquote {
+  @apply border-l-4 pl-4 italic my-4 text-gray-400 py-2 pr-4 rounded-r;
+  border-color: #45BFFF;
+  background: rgba(69, 191, 255, 0.05);
+}
+
+/* Table styling for GFM tables */
+.markdown-content table {
+  @apply w-full my-4 border-collapse text-sm;
+}
+
+.markdown-content thead {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.markdown-content th {
+  @apply px-4 py-2 text-left font-semibold text-white border border-white/10;
+}
+
+.markdown-content td {
+  @apply px-4 py-2 border border-white/10;
+}
+
+.markdown-content tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* Task lists (GFM checkboxes) */
+.markdown-content input[type="checkbox"] {
+  @apply mr-2;
+}
+
+/* Horizontal rule */
+.markdown-content hr {
+  @apply my-6 border-t border-white/10;
+}
+
+/* Images */
+.markdown-content img {
+  @apply max-w-full h-auto rounded-lg my-4;
+}
+
+/* Strong and emphasis */
+.markdown-content strong {
+  @apply font-semibold text-white;
+}
+
+.markdown-content em {
+  @apply italic;
+}
+
+/* Strikethrough (GFM) */
+.markdown-content del {
+  @apply line-through text-gray-500;
+}
+
+/* Report metadata badges container */
+.report-metadata {
+  @apply flex flex-wrap gap-2 mb-4 p-3 rounded-xl border;
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.1);
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Section divider */
+.section-divider {
+  @apply my-6 border-t-2 border-dashed;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Information Sources section */
+.sources-section {
+  @apply mt-10 pt-6 border-t-2;
+  border-color: rgba(69, 191, 255, 0.2);
+}
+
+.sources-section h2 {
+  @apply text-lg font-semibold text-white mb-4 flex items-center gap-2;
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+.sources-section h2::before {
+  content: '';
+  width: 3px;
+  height: 18px;
+  background: #45BFFF;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.sources-section ol {
+  @apply list-decimal pl-5 space-y-1.5;
+}
+
+.sources-section li {
+  @apply text-sm leading-relaxed;
+}
+
+.sources-section li a {
+  color: #45BFFF;
+  @apply underline underline-offset-2 transition-colors;
+}
+
+.sources-section li a:hover {
+  color: #6DD0FF;
+}
+
+.sources-section .source-url {
+  @apply text-xs text-gray-500 ml-2;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Breathing animation like reforge.vc */
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+/* Corner decorations */
+.corner-frame {
+  position: relative;
+}
+
+.corner-frame::before,
+.corner-frame::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.corner-frame::before {
+  top: 0;
+  left: 0;
+  border-width: 2px 0 0 2px;
+}
+
+.corner-frame::after {
+  bottom: 0;
+  right: 0;
+  border-width: 0 2px 2px 0;
+}
+
+/* Override prose styles for dark theme */
+.prose {
+  --tw-prose-body: #d4d4d4;
+  --tw-prose-headings: #ffffff;
+  --tw-prose-links: #45BFFF;
+  --tw-prose-bold: #ffffff;
+  --tw-prose-counters: #888888;
+  --tw-prose-bullets: #666666;
+  --tw-prose-hr: rgba(255, 255, 255, 0.1);
+  --tw-prose-quotes: #a3a3a3;
+  --tw-prose-quote-borders: #45BFFF;
+  --tw-prose-code: #7dd3fc;
+  --tw-prose-pre-code: #d4d4d4;
+  --tw-prose-pre-bg: rgba(255, 255, 255, 0.05);
+  --tw-prose-th-borders: rgba(255, 255, 255, 0.1);
+  --tw-prose-td-borders: rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================================
+   PDF Export - White theme overrides
+   Applied only during PDF generation via .pdf-export-mode class
+   Zero impact on the normal dark UI
+   ============================================================ */
+.pdf-export-mode {
+  background: #ffffff !important;
+  color: #111111 !important;
+  /* Reset Tailwind prose CSS variables to light-theme values */
+  --tw-prose-body: #333333 !important;
+  --tw-prose-headings: #111111 !important;
+  --tw-prose-links: #2563eb !important;
+  --tw-prose-bold: #111111 !important;
+  --tw-prose-counters: #6b7280 !important;
+  --tw-prose-bullets: #9ca3af !important;
+  --tw-prose-hr: #e5e7eb !important;
+  --tw-prose-quotes: #4b5563 !important;
+  --tw-prose-quote-borders: #2563eb !important;
+  --tw-prose-code: #0369a1 !important;
+  --tw-prose-pre-code: #1e293b !important;
+  --tw-prose-pre-bg: #f8fafc !important;
+  --tw-prose-th-borders: #d1d5db !important;
+  --tw-prose-td-borders: #d1d5db !important;
+}
+
+.pdf-export-mode.markdown-content {
+  color: #333333 !important;
+}
+
+.pdf-export-mode.markdown-content h1,
+.pdf-export-mode.markdown-content h2,
+.pdf-export-mode.markdown-content h3,
+.pdf-export-mode.markdown-content h4 {
+  color: #111111 !important;
+}
+
+.pdf-export-mode.markdown-content h1 {
+  border-bottom-color: #e5e7eb !important;
+}
+
+.pdf-export-mode.markdown-content h1::before,
+.pdf-export-mode.markdown-content h2::before {
+  background: #2563eb !important;
+}
+
+.pdf-export-mode.markdown-content strong {
+  color: #111111 !important;
+}
+
+.pdf-export-mode.markdown-content del {
+  color: #9ca3af !important;
+}
+
+.pdf-export-mode.markdown-content a {
+  color: #2563eb !important;
+}
+
+.pdf-export-mode.markdown-content code {
+  background: #f3f4f6 !important;
+  color: #0369a1 !important;
+}
+
+.pdf-export-mode.markdown-content pre {
+  background: #f8fafc !important;
+  color: #1e293b !important;
+  border-color: #e2e8f0 !important;
+}
+
+.pdf-export-mode.markdown-content pre code {
+  background: transparent !important;
+  color: #1e293b !important;
+}
+
+.pdf-export-mode.markdown-content blockquote {
+  color: #4b5563 !important;
+  border-color: #2563eb !important;
+  background: rgba(37, 99, 235, 0.05) !important;
+}
+
+.pdf-export-mode.markdown-content hr {
+  border-color: #e5e7eb !important;
+}
+
+.pdf-export-mode.markdown-content table thead {
+  background: #f9fafb !important;
+}
+
+.pdf-export-mode.markdown-content th {
+  color: #111111 !important;
+  border-color: #d1d5db !important;
+}
+
+.pdf-export-mode.markdown-content td {
+  color: #333333 !important;
+  border-color: #d1d5db !important;
+}
+
+.pdf-export-mode.markdown-content tbody tr:hover {
+  background: #f9fafb !important;
+}
+
+.pdf-export-mode .report-metadata {
+  background: #f9fafb !important;
+  border-color: #e5e7eb !important;
+}
+
+.pdf-export-mode .report-metadata > div {
+  background: #f3f4f6 !important;
+  color: #333333 !important;
+  border-color: #e5e7eb !important;
+}
+
+.pdf-export-mode .section-divider {
+  border-color: #e5e7eb !important;
+}
+
+.pdf-export-mode .sources-section {
+  border-color: rgba(37, 99, 235, 0.2) !important;
+}
+
+.pdf-export-mode .sources-section h2 {
+  color: #111111 !important;
+}
+
+.pdf-export-mode .sources-section h2::before {
+  background: #2563eb !important;
+}
+
+.pdf-export-mode .sources-section li a {
+  color: #2563eb !important;
+}
+
+.pdf-export-mode .sources-section .source-url {
+  color: #6b7280 !important;
+}
+
+.pdf-export-mode .rb-hero,
+.pdf-export-mode .rb-card,
+.pdf-export-mode .rb-section {
+  background: #ffffff !important;
+  border-color: #e5e7eb !important;
+  box-shadow: none !important;
+}
+
+.pdf-export-mode .rb-hero h1,
+.pdf-export-mode .rb-card-header h2,
+.pdf-export-mode .rb-card-header h3,
+.pdf-export-mode .rb-section-heading h2,
+.pdf-export-mode .rb-meta-grid strong {
+  color: #111111 !important;
+}
+
+.pdf-export-mode .rb-section-heading span,
+.pdf-export-mode .rb-timeline-item p,
+.pdf-export-mode .rb-empty {
+  color: #4b5563 !important;
+}
+
+.pdf-export-mode .rb-meta-panel,
+.pdf-export-mode .rb-meta-grid div,
+.pdf-export-mode .rb-source-mini a {
+  background: #f9fafb !important;
+  border-color: #e5e7eb !important;
+}
+
+.pdf-export-mode .rb-score-track {
+  background: #e5e7eb !important;
+}
+
+.pdf-export-mode .rb-score-track span {
+  background: #2563eb !important;
+}
+
+.pdf-export-mode .rb-score-top,
+.pdf-export-mode .rb-source-mini a,
+.pdf-export-mode .rb-timeline-item strong {
+  color: #1f2937 !important;
+}
+
+.pdf-export-mode .rb-tldr {
+  background: #eff6ff !important;
+  border-color: #bfdbfe !important;
+}
+
+.pdf-export-mode .rb-tldr span {
+  color: #1d4ed8 !important;
+}
+
+.pdf-export-mode .rb-tldr p {
+  color: #1f2937 !important;
+}
+
+.pdf-export-mode .rb-tag {
+  color: #1d4ed8 !important;
+  border-color: #bfdbfe !important;
+  background: #eff6ff !important;
+}
+
+/* ============================================================
+   PDF Page-break rules
+   Prevent text truncation across page boundaries
+   ============================================================ */
+
+/* Headings should never be separated from their following content */
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4 {
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+/* Avoid breaking inside these block-level elements */
+.markdown-content p,
+.markdown-content li,
+.markdown-content pre,
+.markdown-content blockquote,
+.markdown-content table,
+.markdown-content img {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Sources section should stay together when possible */
+.sources-section {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.rb-hero,
+.rb-card,
+.rb-section,
+.rb-tldr {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}

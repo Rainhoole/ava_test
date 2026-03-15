@@ -1,0 +1,197 @@
+# Notion Format Configuration
+# This file defines patterns for converting structured markdown to Notion blocks
+
+# Metadata extraction patterns
+# These patterns take priority over auto-detection
+metadata:
+  # Style 1: META_ prefix (highest priority)
+  - pattern: "^META_PRIORITY:\\s*(.+)$"
+    name: "priority"
+    notion_block: "callout"
+    icon: "⚡"
+    color: "yellow_background"
+  
+  - pattern: "^META_STAGE:\\s*(.+)$"
+    name: "stage"
+    notion_block: "callout"
+    icon: "📊"
+    color: "blue_background"
+  
+  - pattern: "^META_CONFIDENCE:\\s*(.+)$"
+    name: "confidence"
+    notion_block: "callout"
+    icon: "🎯"
+    color: "green_background"
+
+  - pattern: "^META_CATEGORIES:\\s*(.+)$"
+    name: "categories"
+    notion_block: "callout"
+    icon: "🏷️"
+    color: "gray_background"
+  
+  # Style 2: Simple key-value (fallback patterns)
+  - pattern: "^Priority:\\s*(.+)$"
+    name: "priority"
+    notion_block: "callout"
+    icon: "⚡"
+    color: "yellow_background"
+  
+  - pattern: "^Stage:\\s*(.+)$"
+    name: "stage"
+    notion_block: "callout"
+    icon: "📊"
+    color: "blue_background"
+  
+  - pattern: "^Confidence:\\s*(.+)$"
+    name: "confidence"
+    notion_block: "callout"
+    icon: "🎯"
+    color: "green_background"
+  
+  # Additional common metadata fields
+  - pattern: "^(?:META_)?Risk(?:[_ ]Level)?:\\s*(.+)$"
+    name: "risk"
+    notion_block: "callout"
+    icon: "⚠️"
+    color: "red_background"
+  
+  - pattern: "^(?:META_)?Market(?:[_ ]Size)?:\\s*(.+)$"
+    name: "market"
+    notion_block: "callout"
+    icon: "🌍"
+    color: "purple_background"
+
+# Section detection patterns
+sections:
+  # Primary section markers
+  - pattern: "^=== SECTION: (.+) ===$"
+    notion_block: "heading_1"
+    extract_title: true
+    color: "default"
+  
+  # Alternative section patterns (for backward compatibility)
+  - pattern: "^- \\*\\*([^:]+):\\*\\*"
+    notion_block: "heading_2"
+    extract_title: true
+  
+  # Numbered sections
+  - pattern: "^\\d+\\. \\*\\*([^:]+):\\*\\*"
+    notion_block: "heading_2"
+    extract_title: true
+
+# Heading detection within sections
+headings:
+  - pattern: "^### (.+)$"
+    notion_block: "heading_3"
+  
+  - pattern: "^## (.+)$"
+    notion_block: "heading_2"
+  
+  - pattern: "^# (.+)$"
+    notion_block: "heading_1"
+
+# Special formatting patterns
+inline_formatting:
+  # Citations
+  citations:
+    pattern: "【[^】]+】"
+    notion_style: "code"
+    color: "gray"
+  
+  # Bold section headers (e.g., "Team Background:")
+  bold_headers:
+    pattern: "^\\*\\*([^:]+):\\*\\*(?= )"
+    notion_style: "bold"
+  
+  # Twitter handles
+  twitter_handles:
+    pattern: "@\\w+"
+    notion_style: "link"
+    url_template: "https://twitter.com/{handle}"
+  
+  # URLs
+  urls:
+    pattern: "https?://[^\\s\\)]+"
+    notion_style: "link"
+
+# List detection
+lists:
+  # Bullet lists
+  - pattern: "^[\\-\\*•] (.+)$"
+    notion_block: "bulleted_list_item"
+  
+  # Numbered lists
+  - pattern: "^\\d+\\. (.+)$"
+    notion_block: "numbered_list_item"
+  
+  # Special scoring bullet (with bullet character)
+  - pattern: "^• ([^–]+) – (.+)$"
+    notion_block: "bulleted_list_item"
+    special: "scoring"
+
+# Table detection
+tables:
+  separator_pattern: "\\|[\\s\\-]+\\|"
+  row_pattern: "\\|.+\\|"
+  notion_block: "table"
+
+# Code block detection
+code_blocks:
+  start_pattern: "^```(\\w*)$"
+  end_pattern: "^```$"
+  notion_block: "code"
+  
+# Paragraph handling
+paragraphs:
+  # Minimum words to be considered a paragraph
+  min_words: 3
+  
+  # Patterns that should NOT be treated as paragraphs
+  exclude_patterns:
+    - "^=== .+ ===$"
+    - "^META_\\w+:"
+    - "^\\s*$"
+  
+  # Join consecutive lines unless separated by blank line
+  join_consecutive: true
+
+# Block styling defaults
+block_defaults:
+  heading_1:
+    color: "default"
+    is_toggleable: false
+  
+  heading_2:
+    color: "default"
+    is_toggleable: false
+  
+  heading_3:
+    color: "default"
+    is_toggleable: false
+  
+  callout:
+    color: "gray_background"
+    
+  code:
+    language: "plain text"
+
+# Section-specific rules
+section_rules:
+  "Timeline & Milestones":
+    prefer_lists: true
+    list_type: "bulleted_list_item"
+  
+  "Scoring Assessment":
+    prefer_lists: true
+    list_type: "bulleted_list_item"
+    
+# Error handling
+error_handling:
+  # What to do when pattern matching fails
+  fallback: "paragraph"
+  
+  # Log parsing errors
+  log_errors: true
+  
+  # Preserve original text on error
+  preserve_text: true

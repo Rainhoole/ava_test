@@ -1,0 +1,450 @@
+{
+  "target_handle": "@agileadtodark",
+  "collected_at": "2026-01-18T12:00:00Z",
+  "early_exit": false,
+  "early_exit_reason": null,
+  "profile": {
+    "username": "agileadtodark",
+    "name": "xEcho",
+    "bio": "First facilitator to support on-chain settlement callbacks.\n\nxEcho makes every AI tool, API, and model an autonomous economic entity.\n\nBased on x402&ERC-8004",
+    "website_url": null,
+    "followers_count": 627,
+    "following_count": 76,
+    "tweets_count": 72,
+    "user_id": "1982681183860432897",
+    "created_at": "Mon Oct 27 05:30:20 +0000 2025",
+    "verified": false,
+    "profile_image_url": ""
+  },
+  "tweets": [
+    {
+      "text": "The Facilitator with a post-payment hook is live! 🔥\n\nThe x402 protocol now supports diverse payment experiences—just like traditional payment systems—including: Cashback, Split Payouts, and Pay-to-earn.\n\nEverything is completed onchain, and it takes just two line of code to…",
+      "created_at": "Wed Nov 05 12:19:35 +0000 2025",
+      "retweet_count": 2,
+      "favorite_count": 19,
+      "urls": [
+        "https://twitter.com/i/web/status/1986045729480278143"
+      ]
+    },
+    {
+      "text": "xEcho Facilitator in the house! @x402Foundation\n\nWe explored on-chain settlement callbacks and enabled on-chain post-payment programmability in x402 v1 🆒\n\nWe're continuing to build on v2 😊 The future of x402 is HUGE!",
+      "created_at": "Tue Jan 06 04:19:31 +0000 2026",
+      "retweet_count": 0,
+      "favorite_count": 2,
+      "urls": []
+    },
+    {
+      "text": "2026 is the year of Agentic Commerce.\n\nEvery AI agent will need:\n> Identity\n> Payment capability\n> On-chain settlement\n\nxEcho makes it possible — turning every payment into a programmable event.\n\nThe future is autonomous. 🔥",
+      "created_at": "Sun Jan 04 06:01:29 +0000 2026",
+      "retweet_count": 0,
+      "favorite_count": 2,
+      "urls": []
+    },
+    {
+      "text": "Payment hooks are absorbing x402, with more and more x402 projects being built around them",
+      "created_at": "Wed Dec 17 07:00:00 +0000 2025",
+      "retweet_count": 0,
+      "favorite_count": 1,
+      "urls": []
+    },
+    {
+      "text": "🚀 After millions of payments on x402, we're excited to introduce x402 V2.\n\nListening to community feedback, we're releasing V2 to evolve internet-native payments with greater flexibility and power.\n\nWhat's new 🧵",
+      "created_at": "Thu Dec 11 17:34:47 +0000 2025",
+      "retweet_count": 267,
+      "favorite_count": 1537,
+      "urls": []
+    },
+    {
+      "text": "The facilitator fee is a key step in the X402 protocol.\n\nXecho provides an alternative approach: collecting fees automatically through on-chain payment callbacks.\n\nThis keeps the facilitator API-key–free, open, and easy to use.",
+      "created_at": "Tue Dec 02 04:16:12 +0000 2025",
+      "retweet_count": 0,
+      "favorite_count": 3,
+      "urls": []
+    },
+    {
+      "text": "Coinbase x402 Facilitator will introduce a minimal fee starting Jan 1, 2026:\n\n→ Free Tier: First 1,000 settled payments/month\n→ Pricing: Just $0.001 per settled payment after that\n\nThe low fee will ensure our ability to continue offering and improving this service.\n\nDetails 🧵",
+      "created_at": "Mon Dec 01 18:41:54 +0000 2025",
+      "retweet_count": 59,
+      "favorite_count": 404,
+      "urls": []
+    },
+    {
+      "text": "> Onchain Post-payment Hook\n> Enable Programmable Payment",
+      "created_at": "Mon Nov 24 13:44:38 +0000 2025",
+      "retweet_count": 0,
+      "favorite_count": 4,
+      "urls": []
+    },
+    {
+      "text": "📅Tomorrow: Agentic Commerce – From Hype to Early Adoption\n\nFriday, Nov 21 2:00 PM UTC Hosted by @Jiren_AI\nSpeaker lineup is absolutely stacked:\n\n@maniusmaximus – CMO @t54ai\n@Must_be_Ash – DevRel @CoinbaseDev\n@probablyangg – Core Contributor @crossmint\n@artoriatech – Core…",
+      "created_at": "Thu Nov 20 03:12:53 +0000 2025",
+      "retweet_count": 49,
+      "favorite_count": 127,
+      "urls": [
+        "https://twitter.com/i/web/status/1991343967917732154"
+      ]
+    },
+    {
+      "text": "All the secrets of on-chain settlement callbacks live inside the open-source xEcho repository 👇\n\nhttps://github.com/xecho-x402-fun/contracts_v1",
+      "created_at": "Tue Nov 18 14:36:09 +0000 2025",
+      "retweet_count": 0,
+      "favorite_count": 9,
+      "urls": [
+        "https://github.com/xecho-x402-fun/contracts_v1"
+      ]
+    },
+    {
+      "text": "xEcho is building on top of x402, turning every payment into a programmable event —a Payment Hook that makes settlement itself extensible, composable, and intelligent.\n\nIn xEcho, every payment talks.\n\nThrough the extensible design, It can trigger staking, reward logic,…",
+      "created_at": "Wed Nov 12 13:23:21 +0000 2025",
+      "retweet_count": 1,
+      "favorite_count": 9,
+      "urls": [
+        "https://twitter.com/i/web/status/1988598493351665804"
+      ]
+    },
+    {
+      "text": "> pay\n> mint\n> create pool\nin one transaction",
+      "created_at": "Tue Nov 11 15:28:55 +0000 2025",
+      "retweet_count": 0,
+      "favorite_count": 2,
+      "urls": []
+    },
+    {
+      "text": "Integration with xEcho Facilitator\n\n1️⃣ Use the xEcho Facilitator endpoint:https://facilitator.xechoai.xyz\n2️⃣ Create a Settler as the receiving address:https://www.xechoai.xyz/settlerhub\n\nAfter this setup, the Facilitator automatically triggers the Settler's on-chain settlement callback after a…",
+      "created_at": "Mon Nov 10 11:55:36 +0000 2025",
+      "retweet_count": 0,
+      "favorite_count": 6,
+      "urls": [
+        "https://facilitator.xechoai.xyz",
+        "https://www.xechoai.xyz/settlerhub",
+        "https://twitter.com/i/web/status/1987851633641062599"
+      ]
+    },
+    {
+      "text": "Building something even more interesting together with @x420yo on top of the payment hook! Excited for what's coming!",
+      "created_at": "Sun Nov 09 03:01:51 +0000 2025",
+      "retweet_count": 1,
+      "favorite_count": 9,
+      "urls": []
+    },
+    {
+      "text": "3/\n✅xEchoは、x402が「ただのP2P送金で終わる」問題を解消して、\n\n『支払いそのものをDeFi的にプログラム可能にするレイヤー』だ\n\nファシリテーター報酬なし問題に対しても、「報酬やインセンティブ配分を設計できる場」を提供している。",
+      "created_at": "Thu Nov 13 00:06:04 +0000 2025",
+      "retweet_count": 0,
+      "favorite_count": 7,
+      "urls": []
+    }
+  ],
+  "following": [
+    {
+      "username": "kleffew94",
+      "name": "kevin",
+      "bio": "distributed systems, onchain finance, models, and agents | coauthor of x402 whitepaper | GTM @coinbasedev | prev @replit |",
+      "followers": 8304,
+      "potential_team": false,
+      "notes": "x402 whitepaper coauthor at Coinbase - ecosystem connection"
+    },
+    {
+      "username": "carsonroscoe7",
+      "name": "Carson Roscoe",
+      "bio": "Senior Software Engineer @ Coinbase\nWorking on AgentKit & x402",
+      "followers": 778,
+      "potential_team": false,
+      "notes": "Coinbase engineer working on x402"
+    },
+    {
+      "username": "flyingkittans",
+      "name": "mechamanda.eth",
+      "bio": "sr software engineer at @ Coinbase. x402 and Payments MCP.",
+      "followers": 913,
+      "potential_team": false,
+      "notes": "Coinbase engineer on x402"
+    },
+    {
+      "username": "jsonhedman",
+      "name": "Jason Hedman",
+      "bio": "founding eng @merit_systems | @x402scan | @vanderbiltu",
+      "followers": 8263,
+      "potential_team": false,
+      "notes": "x402 ecosystem builder"
+    },
+    {
+      "username": "samrags_",
+      "name": "Sam Ragsdale",
+      "bio": "CEO @merit_systems -- monetization tools for developers.\n\nRetired zkVM guy @a16z",
+      "followers": 6953,
+      "potential_team": false,
+      "notes": "x402 ecosystem"
+    },
+    {
+      "username": "daydreamsagents",
+      "name": "Daydreams.Systems (x402, 8004 agents)",
+      "bio": "Autonomous agents & apps running on x402 payment rails. Omnichain. For now: Base | Solana | Starknet. For $dreams go to website, dreamer.",
+      "followers": 13575,
+      "potential_team": false,
+      "notes": "x402 ecosystem project"
+    },
+    {
+      "username": "x420yo",
+      "name": "x420",
+      "bio": "calm your requests\nca: 0x68e284F21D04D4D62398C290EC3EF41C97F80b07",
+      "followers": 2227,
+      "potential_team": false,
+      "notes": "Collaboration partner mentioned in tweets"
+    },
+    {
+      "username": "CPPP2343_",
+      "name": "CP | evm++/acc",
+      "bio": "agent payment @fluxA_offical | blockchain dev 2015 | prev. @AntChain @Alipay @AlibabaGroup\n\nrecently: agentkit / x402 / AP2 / TPA",
+      "followers": 8464,
+      "potential_team": false,
+      "notes": "Blockchain dev since 2015, Alibaba/Alipay alumni - works on FluxA"
+    },
+    {
+      "username": "fluxA_offical",
+      "name": "FluxA",
+      "bio": "Extensible Payment Primitives for the era of AI.\nCatalyze the adoption of x402/AP2.\n\nhttps://fluxa.fun",
+      "followers": 941,
+      "potential_team": false,
+      "notes": "Related x402 project"
+    },
+    {
+      "username": "creolophus123",
+      "name": "KevinY",
+      "bio": "Cofounder and CEO @fluxA_offical | Builders in Crypto since 2016｜Psychological Counselor | Professional Mountaineer | @Columbia",
+      "followers": 11564,
+      "potential_team": false,
+      "notes": "FluxA CEO - ecosystem"
+    },
+    {
+      "username": "crossmint",
+      "name": "Crossmint",
+      "bio": "Enterprise-grade APIs for wallets, stablecoins, and agentic commerce",
+      "followers": 28639,
+      "potential_team": false,
+      "notes": "Ecosystem partner"
+    },
+    {
+      "username": "questflow",
+      "name": "Questflow",
+      "bio": "The orchestration layer for the multi-agent economy. Orchestrate multiple AI agents to research, take action and earn rewards on-chain, autonomously.",
+      "followers": 29516,
+      "potential_team": false,
+      "notes": "Ecosystem partner"
+    },
+    {
+      "username": "Jiren_AI",
+      "name": "Jiren AI",
+      "bio": "Build & deploy AI Agents in 60s. No-code.\n\nx402 enabled • MCP hosting • auto-gas",
+      "followers": 1953,
+      "potential_team": false,
+      "notes": "x402 ecosystem, hosted xEcho panel"
+    },
+    {
+      "username": "santavirtuals",
+      "name": "S.A.N.T.A",
+      "bio": "The x402 Facilitator Router.\n\nThe Unified Interface for x402 facilitators.\n\nBetter prices, better uptime, no subscription.",
+      "followers": 6444,
+      "potential_team": false,
+      "notes": "x402 facilitator aggregator"
+    }
+  ],
+  "scraped_pages": [
+    {
+      "url": "https://www.xechoai.xyz",
+      "type": "website",
+      "content": {
+        "overview": "xEcho is a platform enabling 'programmable payments' for AI interactions through onchain settlement mechanisms. Core proposition: creating economic incentives within AI agent ecosystems.",
+        "key_innovation": "Onchain Post-payment Hook enabling result-based agent compensation",
+        "technology": "Built on x402 and ERC-8004 standards for payment protocol integration",
+        "products": [
+          {
+            "name": "xEcho Facilitator",
+            "description": "First facilitator to support on-chain settlement callbacks, enabling programmable x402 payments and pay-to-X economies"
+          },
+          {
+            "name": "Settler Hub",
+            "description": "Infrastructure for implementing pay-to-earn and other programmable features within x402 payment flows"
+          },
+          {
+            "name": "xEcho Agent",
+            "description": "Monetized agent resource discovery dashboard (Coming Soon)"
+          }
+        ],
+        "business_model": "Circular economy thesis: AI creates economy, economy amplifies AI. Revenue through transaction settlement and facilitator services.",
+        "social": "@agileadtodark"
+      }
+    },
+    {
+      "url": "https://github.com/xecho-x402-fun/contracts_v1",
+      "type": "github",
+      "content": {
+        "description": "Programmable settlement contracts for USDC (EIP-3009) on Base. Powers pay-to-X economies and result-based agent payment through on-chain settlement callbacks.",
+        "core_contracts": [
+          {
+            "name": "FacilitatorSettlementProxyUpgradeable",
+            "function": "Routes USDC EIP-3009 transfers and executes settlement callbacks atomically when recipients implement ISettler interface"
+          },
+          {
+            "name": "xEchoSettlerFactoryUpgradeable",
+            "function": "Deploys settler instances as UUPS proxies and manages companion RewardToken creation"
+          },
+          {
+            "name": "Pay2MintSettlerUpgradeable",
+            "function": "Three-phase workflow: Mint → Uniswap V3 Launch → Earn"
+          },
+          {
+            "name": "Pay2Mintv1SettlerUpgradeable",
+            "function": "Simplified variant with USDC caps and fixed liquidity"
+          },
+          {
+            "name": "CashbackSettlerUpgradeable",
+            "function": "Distributes cashback for initial payments, forwards remainder"
+          },
+          {
+            "name": "FeeForwardingSettlerUpgradeable",
+            "function": "Skims fees to designated recipient"
+          },
+          {
+            "name": "RewardToken",
+            "function": "ERC20 token with transfer restrictions until settlers enable transactions during launch phase"
+          }
+        ],
+        "tech_stack": {
+          "languages": "Solidity (44.8%), JavaScript (55.2%)",
+          "framework": "Hardhat 2.22+",
+          "requirements": "Node.js 18+",
+          "network": "Base blockchain"
+        },
+        "dependencies": [
+          "OpenZeppelin upgradeable contracts (UUPS proxy pattern)",
+          "Uniswap V3 position management",
+          "EIP-3009 USDC transfer authorization"
+        ],
+        "repo_metrics": {
+          "stars": 3,
+          "forks": 0,
+          "commits": 1,
+          "license": "MIT",
+          "contributors": [
+            "xechoai"
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://facilitator.xechoai.xyz",
+      "type": "docs",
+      "content": {
+        "version": "0.1.0",
+        "networks": [
+          {
+            "name": "Base Sepolia (Testnet)",
+            "chain_id": 84532,
+            "usdc_token": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+            "monetize_proxy": "0x6d27486790ce5918f1bc68bE3fCcC25304D09D31"
+          },
+          {
+            "name": "Base (Mainnet)",
+            "chain_id": 8453,
+            "usdc_token": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+            "monetize_proxy": "0x6d27486790ce5918f1bc68bE3fCcC25304D09D31"
+          }
+        ]
+      }
+    }
+  ],
+  "web_searches": [
+    {
+      "query": "x402 protocol ERC-8004 crypto payment",
+      "results": {
+        "x402_overview": "x402 is an open standard for internet native payments. Transforms HTTP 402 'Payment Required' status codes into micropayment rails for APIs and M2M transactions. Token and chain-neutral infrastructure. Coinbase's reference implementation used USDC on Base.",
+        "erc8004_overview": "ERC-8004 is an Ethereum-based protocol for AI agent trust, identity, discoverability, and reputation. Co-authored by Marco De Rossi (MetaMask), Davide Crapis (Ethereum Foundation), Jordan Ellis (Google), and Erik Reppel (Coinbase).",
+        "erc8004_registries": [
+          "Identity Registry: ERC-721 NFT as identity credential for agents",
+          "Reputation Registry: Decentralized feedback based on x402 payment proofs",
+          "Validation Registry: Third-party verification via TEE oracles, staked inference, or zk-ML proofs"
+        ],
+        "relationship": "x402 fixes payments, ERC-8004 builds trust. ERC-8004 agent cards include HTTP endpoints and x402 payment configurations.",
+        "timeline": "EIP draft created August 13, 2025. Formally unveiled by Ethereum Foundation's dAI team and Consensys on October 9, 2025."
+      }
+    },
+    {
+      "query": "xEcho AI agent payment coinbase base",
+      "results": {
+        "x402_ecosystem": {
+          "facilitator_market_share": "Coinbase ~70%, PayAI Network ~10%, x402.rs ~10%",
+          "foundation": "Coinbase and Cloudflare jointly established x402 Foundation",
+          "base_integration": "Flashblocks feature adds 200ms preconfirmations",
+          "pricing": "Coinbase charges no facilitator fee for USDC on Base"
+        },
+        "github_stats": {
+          "stars": "5.3k",
+          "contributors": 146,
+          "dependent_projects": 409
+        }
+      }
+    }
+  ],
+  "discovered_urls": [
+    "https://www.xechoai.xyz",
+    "https://www.xechoai.xyz/settlerhub",
+    "https://facilitator.xechoai.xyz",
+    "https://github.com/xecho-x402-fun/contracts_v1",
+    "https://github.com/xecho-x402-fun",
+    "https://github.com/xechoai",
+    "https://github.com/coinbase/x402",
+    "https://x402.org",
+    "https://fluxa.fun"
+  ],
+  "potential_team_members": [
+    {
+      "github_username": "xechoai",
+      "github_user_id": "242115063",
+      "email": "242115063+xechoai@users.noreply.github.com (noreply)",
+      "notes": "Main GitHub contributor to contracts_v1 repo. Minimal public profile. Likely founder/core dev."
+    }
+  ],
+  "related_ecosystem_projects": [
+    {
+      "name": "x402 Foundation",
+      "twitter": "@x402Foundation",
+      "description": "Core protocol xEcho builds on. Founded by Coinbase and Cloudflare.",
+      "relation": "xEcho is an official facilitator for x402"
+    },
+    {
+      "name": "FluxA",
+      "twitter": "@fluxA_offical",
+      "description": "Extensible Payment Primitives for AI. Another x402 project.",
+      "relation": "Ecosystem peer, not same team"
+    },
+    {
+      "name": "x420",
+      "twitter": "@x420yo",
+      "description": "Collaboration partner mentioned in xEcho tweets",
+      "relation": "Building together on payment hooks"
+    },
+    {
+      "name": "Daydreams.Systems",
+      "twitter": "@daydreamsagents",
+      "description": "Autonomous agents on x402 payment rails",
+      "relation": "x402 ecosystem project"
+    },
+    {
+      "name": "S.A.N.T.A",
+      "twitter": "@santavirtuals",
+      "description": "x402 Facilitator Router / aggregator",
+      "relation": "Potential competitor or partner"
+    }
+  ],
+  "key_observations": {
+    "stage": "Pre-seed/Early seed - Account created Oct 27, 2025 (~3 months old). v0.1.0 product. 1 commit on GitHub.",
+    "traction": "Facilitator is live on Base mainnet. Part of x402 ecosystem which has 'millions of payments'. xEcho tweets about v2 indicate iteration.",
+    "technology": "Solid technical foundation - smart contracts use OpenZeppelin upgradeable patterns, UUPS proxies, integrates Uniswap V3. Innovative settlement callback architecture.",
+    "market_timing": "Excellent - riding x402 wave which has massive momentum (5.3k GitHub stars, 146 contributors, 409 dependent projects). Coinbase backing for x402 protocol.",
+    "competitive_position": "First mover on settlement callbacks / payment hooks within x402 ecosystem. Unique value prop vs vanilla x402.",
+    "team_concerns": "Anonymous team. Only 1 GitHub contributor visible. No public team disclosure.",
+    "funding_status": "No funding information found. Likely unfunded or very early angel.",
+    "community": "Small but engaged - 627 followers, decent engagement on tweets (19-1537 likes)"
+  }
+}

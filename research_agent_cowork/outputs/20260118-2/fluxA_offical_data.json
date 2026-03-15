@@ -1,0 +1,485 @@
+{
+  "target_handle": "@fluxA_offical",
+  "collected_at": "2026-01-18T00:00:00Z",
+  "early_exit": false,
+  "early_exit_reason": null,
+  "profile": {
+    "username": "fluxA_offical",
+    "name": "FluxA",
+    "bio": "Extensible Payment Primitives for the era of AI.\nCatalyze the adoption of x402/AP2.\n\nhttps://t.co/X8IrFB4vIS",
+    "website_url": null,
+    "followers_count": 941,
+    "following_count": 170,
+    "tweets_count": 56,
+    "user_id": "1968201959829319681",
+    "created_at": "Wed Sep 17 06:35:01 +0000 2025",
+    "verified": false,
+    "profile_image_url": ""
+  },
+  "tweets": [
+    {
+      "text": "Embedded & deferred payments reshape how agents transact.\n\nThey turn payment from a separate financial step into an embedded capability within agent communication.\n\n#x402 inspired a movement — more financial innovation is coming.",
+      "created_at": "Wed Oct 22 01:57:00 +0000 2025",
+      "retweet_count": 1,
+      "favorite_count": 51,
+      "urls": []
+    },
+    {
+      "text": "Claude Cowork is built on Claude Code+Skills. Works great for non-technical tasks.\n\nThen we embedded APIs into the Skills.\n\nNow it's something else entirely.\n\n🔽Creating a PPT with Claude Code: Vanilla vs Skills vs Skills+API",
+      "created_at": "Tue Jan 13 16:13:40 +0000 2026",
+      "retweet_count": 0,
+      "favorite_count": 4,
+      "urls": []
+    },
+    {
+      "text": "Introducing Cowork: Claude Code for the rest of your work.\n\nCowork lets you complete non-technical tasks much like how developers use Claude Code.",
+      "created_at": "Mon Jan 12 20:06:48 +0000 2026",
+      "retweet_count": 8661,
+      "favorite_count": 87777,
+      "urls": []
+    },
+    {
+      "text": "AI agents are becoming proactive.\nBut proactivity without payment is just intention.\n\nAt FluxA, we believe agent payment is what turns reasoning into execution — and expands the real capability boundary of agents.\n\nFluxA doesn't treat payment as a transaction step.\nWe embed…",
+      "created_at": "Sun Jan 11 06:09:06 +0000 2026",
+      "retweet_count": 1,
+      "favorite_count": 7,
+      "urls": []
+    },
+    {
+      "text": "Introducing FluxA Mandate: A risk-control–enhanced AP2 payment mandate service \n\n> Tell the agent your payment task\n> The agent signs an intent mandate with you\n> FluxA Mandate enforces secure execution\n> Mitigates hallucinations and injection attacks...\n\nBuilt on top of the…",
+      "created_at": "Fri Dec 26 05:43:26 +0000 2025",
+      "retweet_count": 3,
+      "favorite_count": 12,
+      "urls": [
+        "https://open.substack.com/pub/fluxapay/p/introducing-fluxa-mandate-a-risk"
+      ]
+    },
+    {
+      "text": "You built the tools, agents are using them. Value is flowing... just not to you. Gain your value in a few minutes.\n\nIntroducing FluxA Monetization. Turn any MCP and API server into a revenue stream. Paste your server URL, set prices per tool. Agents pays via x402.",
+      "created_at": "Tue Dec 23 00:01:10 +0000 2025",
+      "retweet_count": 1,
+      "favorite_count": 13,
+      "urls": []
+    },
+    {
+      "text": "Happy to join the @CoinbaseDev official x402 ecosystem page! \n\nMaking x402 agent payments more secure and seamless, smooth like Flux, is the goal we continue to build toward.\n\nFind FluxA on x402.org",
+      "created_at": "Wed Dec 17 07:22:08 +0000 2025",
+      "retweet_count": 3,
+      "favorite_count": 11,
+      "urls": [
+        "http://x402.org"
+      ]
+    },
+    {
+      "text": "x402 v2 is live. Can't wait to unlock the new features FluxA will build on top of it\n\n> deferred payments\n> fund splitting, cash back\n> fiat rails",
+      "created_at": "Fri Dec 12 02:19:33 +0000 2025",
+      "retweet_count": 0,
+      "favorite_count": 17,
+      "urls": []
+    },
+    {
+      "text": "I wasn't suppose to share this, but we just monetized MCP servers on n8n with x402. \n\nNo code, no api keys.\n\nJust agent using better tools with some fees and go brrrrrr\n\nTools for agent is going evolve, very soon.",
+      "created_at": "Tue Dec 09 04:20:36 +0000 2025",
+      "retweet_count": 2,
+      "favorite_count": 7,
+      "urls": [
+        "https://monetize.fluxapay.xyz/"
+      ]
+    },
+    {
+      "text": "Budget-controlled X402 access is now live on Qwen Code @Alibaba_Qwen 🧑‍💻\n\nYour code agents can now tap into powerful X402 resources to upgrade the vibecoding experience.\n\nFluxA Agent Wallet gives you full budget control for your code agents, enabling more imaginative task…",
+      "created_at": "Tue Dec 02 02:17:20 +0000 2025",
+      "retweet_count": 8,
+      "favorite_count": 40,
+      "urls": []
+    },
+    {
+      "text": "Introducing FluxA AI Wallet — Agent spending, under control\n\n✔️ Grant and revoke wallet access per agent\n✔️ Per-agent spending limits\n✔️ Per-x402 server payment policies\n✔️ Pay via MCP, APIs, and more\n✔️ Unlock more AI agents: ChatGPT, N8N, AgentKit\n\nBuilding on x402 @CoinbaseDev…",
+      "created_at": "Wed Nov 26 17:47:26 +0000 2025",
+      "retweet_count": 3,
+      "favorite_count": 15,
+      "urls": []
+    }
+  ],
+  "following": [
+    {
+      "username": "tranaiht",
+      "name": "Avin",
+      "bio": "Learning",
+      "followers": 849,
+      "note": "Early follow - possible team/advisor"
+    },
+    {
+      "username": "danielhsht",
+      "name": "daniel",
+      "bio": "web 3",
+      "followers": 334,
+      "note": "Early follow - possible team"
+    },
+    {
+      "username": "ZSkyX7",
+      "name": "Sky Zhang",
+      "bio": "Curr. @fluxA_offical | x402, Agentic Workflow, NLP | Made some contribution to the training of Pangu | Previously @Huawei @AmiiThinks @Dentons",
+      "followers": 47,
+      "note": "CONFIRMED TEAM MEMBER"
+    },
+    {
+      "username": "creolophus123",
+      "name": "KevinY",
+      "bio": "Cofounder and CEO @fluxA_offical | Builders in Crypto since 2016｜Psychological Counselor | Professional Mountaineer | @Columbia",
+      "followers": 11564,
+      "note": "CONFIRMED FOUNDER/CEO"
+    },
+    {
+      "username": "tmel0211",
+      "name": "Haotian | CryptoInsight",
+      "bio": "独立研究员| Advisor @ambergroup_io | 特约研究员 @IOSGVC",
+      "followers": 47639,
+      "note": "Crypto researcher/influencer connection"
+    },
+    {
+      "username": "nake13",
+      "name": "Zhixiong Pan",
+      "bio": "A real cyborg vibe coder | Study @ChainFeedsxyz | ex Research @ChainNewscom, @MyToken, @IBM",
+      "followers": 44695,
+      "note": "Crypto researcher connection"
+    },
+    {
+      "username": "obchakevich_",
+      "name": "Alex",
+      "bio": "Research digital money. Payments propagandist at @0xPolygon | RT ≠ endorsements.",
+      "followers": 66826,
+      "note": "Polygon payments lead - strategic connection"
+    },
+    {
+      "username": "a16zcrypto",
+      "name": "a16z crypto",
+      "bio": "We back bold entrepreneurs building the next internet.",
+      "followers": 184079,
+      "note": "Top VC - aspirational connection"
+    },
+    {
+      "username": "dabit3",
+      "name": "nader dabit",
+      "bio": "devrel + dx @eigencloud @eigen_labs // ai, agents, & onchain",
+      "followers": 183253,
+      "note": "Major crypto developer advocate"
+    },
+    {
+      "username": "shafu0x",
+      "name": "shafu",
+      "bio": "@merit_systems | @x402scan | @the_bytecode",
+      "followers": 12414,
+      "note": "x402 ecosystem builder"
+    },
+    {
+      "username": "henloitsjoyce",
+      "name": "joyce",
+      "bio": "product @crossmint | brought moneygram onto stablecoins",
+      "followers": 20042,
+      "note": "Crossmint product - stablecoin payments expert"
+    },
+    {
+      "username": "ShanAggarwal",
+      "name": "Shan Aggarwal",
+      "bio": "chief business officer @coinbase",
+      "followers": 15621,
+      "note": "Coinbase CBO - key x402 connection"
+    },
+    {
+      "username": "jsonhedman",
+      "name": "Jason Hedman",
+      "bio": "founding eng @merit_systems | @x402scan | @vanderbiltu",
+      "followers": 8263,
+      "note": "x402scan founding engineer"
+    },
+    {
+      "username": "x402scan",
+      "name": "x402scan",
+      "bio": "Stay up to date with the x402 ecosystem",
+      "followers": 14141,
+      "note": "x402 ecosystem tracker"
+    },
+    {
+      "username": "DavideCrapis",
+      "name": "Davide Crapis",
+      "bio": "AI Lead at Ethereum Foundation · dAI Team",
+      "followers": 24341,
+      "note": "EF AI Lead - strategic connection"
+    },
+    {
+      "username": "marco_derossi",
+      "name": "Marco De Rossi",
+      "bio": "AI Lead @ MetaMask 🦊 ERC-8004 author.",
+      "followers": 5559,
+      "note": "MetaMask AI Lead - potential integration partner"
+    },
+    {
+      "username": "Alibaba_Qwen",
+      "name": "Qwen",
+      "bio": "Open foundation models for AGI.",
+      "followers": 133134,
+      "note": "CONFIRMED INTEGRATION PARTNER - FluxA integrated with Qwen Code"
+    },
+    {
+      "username": "PayAINetwork",
+      "name": "PayAI Network | x402 Facilitator",
+      "bio": "Payments for the AI age.",
+      "followers": 23276,
+      "note": "x402 ecosystem peer"
+    },
+    {
+      "username": "patrickc",
+      "name": "Patrick Collison",
+      "bio": "@Stripe CEO, @ArcInstitute cofounder.",
+      "followers": 605387,
+      "note": "Stripe CEO - aspirational/industry leader"
+    },
+    {
+      "username": "tempo",
+      "name": "tempo",
+      "bio": "The blockchain designed for payments. Live on testnet.",
+      "followers": 69367,
+      "note": "Payments blockchain - potential ecosystem partner"
+    }
+  ],
+  "scraped_pages": [
+    {
+      "url": "https://fluxa.finance",
+      "type": "website",
+      "content_summary": "WARNING: This appears to be a DIFFERENT PROJECT - Fluxa Swap is a BSC-based cross-chain DEX with $FLUX token. NOT the same as @fluxA_offical which is building AI payment infrastructure. The Twitter bio link may be incorrect or there's brand confusion.",
+      "key_info": {
+        "product": "Fluxa Swap - cross-chain token swap DEX",
+        "blockchain": "BSC (Binance Smart Chain)",
+        "token": "$FLUX",
+        "features": [
+          "Cross-chain swaps",
+          "AI-powered suggestions",
+          "Atomic swaps",
+          "DAO governance"
+        ],
+        "partners_claimed": [
+          "Bitget",
+          "Bitmart",
+          "Gate.io",
+          "KuCoin",
+          "MEXC",
+          "Pinksale"
+        ]
+      }
+    },
+    {
+      "url": "https://fluxapay.substack.com/p/in-depth-from-payments-to-embedded",
+      "type": "blog/whitepaper",
+      "content_summary": "Comprehensive thesis on AI agent payments - 'Embedded Payments 2.0'. Discusses how AI agents are becoming economic participants that need payment capabilities. Positions FluxA as building infrastructure for AI to discover, pay for, and access internet resources. References x402 (Coinbase), AP2 (Google), and ACP (ChatGPT+Stripe) protocols.",
+      "key_info": {
+        "vision": "Building 'Embedded Payments 2.0' infrastructure for AI agents",
+        "thesis": "AI will become internet's new economic protagonist - needs native payment rails",
+        "market_positioning": "Building on top of x402 protocol (Coinbase), integrating with AP2 standards",
+        "products_mentioned": [
+          "FluxA Wallet",
+          "FluxA Monetization",
+          "FluxA Mandate"
+        ],
+        "competitors_ecosystem": [
+          "Coinbase x402",
+          "Google AP2",
+          "ChatGPT+Stripe ACP",
+          "Cloudflare",
+          "BrowserBase",
+          "FireCrawl"
+        ]
+      }
+    },
+    {
+      "url": "https://monetize.fluxapay.xyz/",
+      "type": "product",
+      "content_summary": "FluxA Monetization product - allows MCP server and API developers to monetize their services using x402 protocol. AI agents pay per request using HTTP 402 Payment Required.",
+      "key_info": {
+        "product": "FluxA Monetization",
+        "value_prop": "Turn MCP servers and APIs into revenue streams",
+        "how_it_works": [
+          "Connect wallet",
+          "Register server",
+          "Get proxy URL",
+          "Earn revenue per request"
+        ],
+        "tech": "x402 protocol, non-custodial wallets, Privy authentication",
+        "status": "v0.1 Beta"
+      }
+    },
+    {
+      "url": "https://x402.org",
+      "type": "ecosystem",
+      "content_summary": "Official x402 protocol page - open standard for internet-native payments using HTTP 402. FluxA is listed on the official ecosystem page.",
+      "key_info": {
+        "protocol_stats": {
+          "transactions": "75.41M",
+          "volume": "$24.24M",
+          "buyers": "94.06K",
+          "sellers": "22K"
+        },
+        "key_features": [
+          "Zero protocol fees",
+          "Instant settlement",
+          "No KYC required",
+          "Stablecoin-based"
+        ],
+        "fluxa_relationship": "Listed on official x402 ecosystem page"
+      }
+    },
+    {
+      "url": "https://agentwallet.fluxapay.xyz/",
+      "type": "product",
+      "content_summary": "FluxA Agent Wallet - allows users to let AI agents pay safely with spending controls.",
+      "key_info": {
+        "product": "FluxA AI Wallet",
+        "tagline": "Let your agents pay safely",
+        "auth": "Privy-powered authentication"
+      }
+    }
+  ],
+  "web_searches": [
+    {
+      "query": "FluxA agent payment funding investment",
+      "results": []
+    },
+    {
+      "query": "x402 FluxA Coinbase ecosystem",
+      "results": []
+    }
+  ],
+  "discovered_urls": [
+    "https://fluxa.finance",
+    "https://fluxapay.substack.com/p/in-depth-from-payments-to-embedded",
+    "https://monetize.fluxapay.xyz/",
+    "https://agentwallet.fluxapay.xyz/",
+    "https://x402.org",
+    "https://open.substack.com/pub/fluxapay/p/introducing-fluxa-mandate-a-risk",
+    "https://open.substack.com/pub/fluxapay/p/let-your-ai-agents-spend-money-safely",
+    "https://open.substack.com/pub/fluxapay/p/start-charging-agents-for-tools-tutorial",
+    "https://manus.im/blog/manus-joins-meta-for-next-era-of-innovation"
+  ],
+  "potential_team_members": [
+    {
+      "username": "creolophus123",
+      "name": "KevinY",
+      "role": "Cofounder and CEO",
+      "bio": "Cofounder and CEO @fluxA_offical | Builders in Crypto since 2016｜Psychological Counselor | Professional Mountaineer | @Columbia",
+      "followers": 11564,
+      "background": [
+        "Columbia University",
+        "Crypto builder since 2016",
+        "Psychological Counselor",
+        "Professional Mountaineer"
+      ],
+      "confirmed": true
+    },
+    {
+      "username": "ZSkyX7",
+      "name": "Sky Zhang",
+      "role": "Team member (likely technical)",
+      "bio": "Curr. @fluxA_offical | x402, Agentic Workflow, NLP | Made some contribution to the training of Pangu | Previously @Huawei @AmiiThinks @Dentons",
+      "followers": 47,
+      "background": [
+        "Huawei (contributed to Pangu LLM training)",
+        "AmiiThinks (Alberta Machine Intelligence Institute)",
+        "Dentons (law firm)",
+        "NLP expertise"
+      ],
+      "confirmed": true
+    },
+    {
+      "username": "tranaiht",
+      "name": "Avin",
+      "role": "Possible early team/advisor",
+      "bio": "Learning",
+      "followers": 849,
+      "confirmed": false
+    },
+    {
+      "username": "danielhsht",
+      "name": "daniel",
+      "role": "Possible early team",
+      "bio": "web 3",
+      "followers": 334,
+      "confirmed": false
+    }
+  ],
+  "key_findings": {
+    "company_overview": {
+      "name": "FluxA",
+      "tagline": "Extensible Payment Primitives for the era of AI",
+      "founded": "September 2025 (Twitter account created)",
+      "stage": "Pre-seed/Seed - very early stage startup",
+      "sector": "AI Agent Infrastructure / Crypto Payments / DeFi"
+    },
+    "products": [
+      {
+        "name": "FluxA AI Wallet",
+        "description": "Budget-controlled wallet for AI agents with spending limits, per-agent policies",
+        "status": "Live/Beta"
+      },
+      {
+        "name": "FluxA Monetization",
+        "description": "Platform to monetize MCP servers and APIs via x402 protocol",
+        "status": "v0.1 Beta"
+      },
+      {
+        "name": "FluxA Mandate",
+        "description": "Risk-control enhanced AP2 payment mandate service with hallucination/injection attack mitigation",
+        "status": "Announced"
+      },
+      {
+        "name": "Cowork",
+        "description": "Claude Code for non-technical tasks (mentioned in tweets with massive engagement)",
+        "status": "Experimental"
+      }
+    ],
+    "technology_stack": {
+      "protocols": [
+        "x402 (Coinbase)",
+        "AP2 (Google Agent Payment Protocol)"
+      ],
+      "integrations": [
+        "Qwen Code (Alibaba)",
+        "Claude Code",
+        "N8N",
+        "MCP servers",
+        "ChatGPT"
+      ],
+      "blockchain": "Stablecoin-based (via x402)",
+      "auth": "Privy"
+    },
+    "traction_signals": [
+      "Listed on official Coinbase x402 ecosystem page",
+      "Integration with Alibaba Qwen Code (133K followers)",
+      "Engagement from Qwen official account ('Cool!')",
+      "One tweet (Cowork announcement) got 87,777 likes and 8,661 retweets - viral",
+      "Active product development with multiple launches in 2 months"
+    ],
+    "ecosystem_relationships": {
+      "coinbase": "Building on x402, listed on official ecosystem page",
+      "alibaba_qwen": "Confirmed integration partner",
+      "n8n": "MCP monetization integration",
+      "manus": "Reference to Manus joining Meta (contextual awareness)"
+    },
+    "funding": {
+      "status": "No funding information found",
+      "note": "Likely bootstrapped or very early pre-seed"
+    },
+    "concerns": [
+      "Website URL confusion - fluxa.finance appears to be a different project (BSC DEX)",
+      "Very new company (4 months old)",
+      "Small team identified (2 confirmed members)",
+      "No funding disclosed"
+    ],
+    "notable_connections": [
+      "Shan Aggarwal (Coinbase CBO)",
+      "Davide Crapis (Ethereum Foundation AI Lead)",
+      "Marco De Rossi (MetaMask AI Lead)",
+      "a16z crypto (following)",
+      "Patrick Collison (Stripe CEO - following)"
+    ]
+  }
+}

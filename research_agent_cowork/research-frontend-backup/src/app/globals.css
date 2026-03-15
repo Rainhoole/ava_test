@@ -1,0 +1,605 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sidebar-bg: #0A0A0A;
+  --sidebar-hover: #1A1A1A;
+  --sidebar-border: #1F1F1F;
+  --main-bg: #000000;
+  --main-secondary: #0A0A0A;
+  --main-input: #111111;
+  --accent-primary: #45BFFF;
+  --accent-secondary: #3AADEF;
+  --accent-muted: #2A6F9E;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B0B0B0;
+  --text-muted: #666666;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  background: var(--main-bg);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.01em;
+}
+
+/* Scrollbar styling - minimal dark */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* Log viewer styling */
+.log-container {
+  @apply px-4 md:px-8 lg:px-16 py-4;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.log-message {
+  @apply mb-4 p-4 rounded-2xl;
+  animation: fadeInUp 0.2s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.log-message-info {
+  @apply bg-white/5 text-gray-300 border border-white/10;
+}
+
+.log-message-tool {
+  @apply bg-sky-500/10 text-sky-300 border border-sky-500/20;
+}
+
+.log-message-result {
+  @apply bg-emerald-500/10 text-emerald-300 border border-emerald-500/20;
+}
+
+.log-message-error {
+  @apply bg-red-500/10 text-red-300 border border-red-500/20;
+}
+
+.log-message-assistant {
+  @apply bg-white/5 text-gray-100;
+}
+
+.log-message-header {
+  @apply flex items-center gap-2 mb-2 text-xs font-medium uppercase tracking-wider opacity-70;
+}
+
+.log-message-content {
+  @apply text-sm leading-relaxed font-mono whitespace-pre-wrap break-words;
+}
+
+/* Markdown content styling - Dark theme */
+.markdown-content {
+  @apply text-gray-200 leading-relaxed;
+}
+
+.markdown-content h1 {
+  @apply text-2xl font-bold mt-8 mb-4 text-white pb-2 border-b border-white/10
+         flex items-center gap-3;
+  font-family: 'Instrument Serif', 'Georgia', serif;
+}
+
+.markdown-content h1::before {
+  content: '';
+  width: 3px;
+  height: 24px;
+  background: #45BFFF;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.markdown-content h2 {
+  @apply text-xl font-semibold mt-6 mb-3 text-white;
+  font-family: 'Instrument Serif', 'Georgia', serif;
+}
+
+.markdown-content h3 {
+  @apply text-lg font-medium mt-5 mb-2 text-white;
+  font-family: 'Instrument Serif', 'Georgia', serif;
+}
+
+.markdown-content h4 {
+  @apply text-base font-medium mt-4 mb-2 text-white;
+}
+
+.markdown-content p {
+  @apply my-3 leading-relaxed;
+}
+
+.markdown-content ul {
+  @apply my-3 pl-6 list-disc;
+}
+
+.markdown-content ol {
+  @apply my-3 pl-6 list-decimal;
+}
+
+.markdown-content li {
+  @apply my-1;
+}
+
+.markdown-content li > ul,
+.markdown-content li > ol {
+  @apply my-1;
+}
+
+.markdown-content code {
+  @apply bg-white/10 px-1.5 py-0.5 rounded text-sm text-sky-300 font-mono;
+}
+
+.markdown-content pre {
+  @apply bg-white/5 text-gray-200 p-4 rounded-xl overflow-x-auto my-4 border border-white/10;
+}
+
+.markdown-content pre code {
+  @apply bg-transparent text-gray-200 p-0;
+}
+
+.markdown-content a {
+  color: #45BFFF;
+  @apply underline underline-offset-2 transition-colors;
+}
+
+.markdown-content a:hover {
+  color: #6DD0FF;
+}
+
+.markdown-content blockquote {
+  @apply border-l-4 pl-4 italic my-4 text-gray-400 py-2 pr-4 rounded-r;
+  border-color: #45BFFF;
+  background: rgba(69, 191, 255, 0.05);
+}
+
+/* Table styling for GFM tables */
+.markdown-content table {
+  @apply w-full my-4 border-collapse text-sm;
+}
+
+.markdown-content thead {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.markdown-content th {
+  @apply px-4 py-2 text-left font-semibold text-white border border-white/10;
+}
+
+.markdown-content td {
+  @apply px-4 py-2 border border-white/10;
+}
+
+.markdown-content tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* Task lists (GFM checkboxes) */
+.markdown-content input[type="checkbox"] {
+  @apply mr-2;
+}
+
+/* Horizontal rule */
+.markdown-content hr {
+  @apply my-6 border-t border-white/10;
+}
+
+/* Images */
+.markdown-content img {
+  @apply max-w-full h-auto rounded-lg my-4;
+}
+
+/* Strong and emphasis */
+.markdown-content strong {
+  @apply font-semibold text-white;
+}
+
+.markdown-content em {
+  @apply italic;
+}
+
+/* Strikethrough (GFM) */
+.markdown-content del {
+  @apply line-through text-gray-500;
+}
+
+/* Report metadata badges container */
+.report-metadata {
+  @apply flex flex-wrap gap-2 mb-4 p-3 rounded-xl border;
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.1);
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Section divider */
+.section-divider {
+  @apply my-6 border-t-2 border-dashed;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Information Sources section */
+.sources-section {
+  @apply mt-10 pt-6 border-t-2;
+  border-color: rgba(69, 191, 255, 0.2);
+}
+
+.sources-section h2 {
+  @apply text-lg font-semibold text-white mb-4 flex items-center gap-2;
+  font-family: 'Instrument Serif', 'Georgia', serif;
+}
+
+.sources-section h2::before {
+  content: '';
+  width: 3px;
+  height: 18px;
+  background: #45BFFF;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.sources-section ol {
+  @apply list-decimal pl-5 space-y-1.5;
+}
+
+.sources-section li {
+  @apply text-sm leading-relaxed;
+}
+
+.sources-section li a {
+  color: #45BFFF;
+  @apply underline underline-offset-2 transition-colors;
+}
+
+.sources-section li a:hover {
+  color: #6DD0FF;
+}
+
+.sources-section .source-url {
+  @apply text-xs text-gray-500 ml-2;
+}
+
+/* Animation for running tasks */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Breathing animation like reforge.vc */
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+/* Button base styles */
+.btn-primary {
+  background: #45BFFF;
+  color: #000000;
+  @apply px-4 py-2 rounded-lg font-medium
+         transition-all duration-150
+         disabled:opacity-40 disabled:cursor-not-allowed;
+}
+
+.btn-primary:hover {
+  background: #6DD0FF;
+}
+
+.btn-secondary {
+  @apply bg-white/5 text-white px-4 py-2 rounded-lg font-medium
+         border border-white/10
+         transition-all duration-150
+         disabled:opacity-40 disabled:cursor-not-allowed;
+}
+
+.btn-secondary:hover {
+  @apply bg-white/10;
+}
+
+/* Input styles */
+.input-primary {
+  @apply w-full px-4 py-3 rounded-xl border
+         text-white placeholder-gray-500
+         focus:outline-none focus:border-sky-500/50
+         transition-all duration-150;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.input-primary:focus {
+  box-shadow: 0 0 0 2px rgba(69, 191, 255, 0.1);
+}
+
+/* Card styles */
+.card {
+  @apply rounded-2xl border;
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Corner decorations */
+.corner-frame {
+  position: relative;
+}
+
+.corner-frame::before,
+.corner-frame::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.corner-frame::before {
+  top: 0;
+  left: 0;
+  border-width: 2px 0 0 2px;
+}
+
+.corner-frame::after {
+  bottom: 0;
+  right: 0;
+  border-width: 0 2px 2px 0;
+}
+
+/* Override prose styles for dark theme */
+.prose {
+  --tw-prose-body: #d4d4d4;
+  --tw-prose-headings: #ffffff;
+  --tw-prose-links: #45BFFF;
+  --tw-prose-bold: #ffffff;
+  --tw-prose-counters: #888888;
+  --tw-prose-bullets: #666666;
+  --tw-prose-hr: rgba(255, 255, 255, 0.1);
+  --tw-prose-quotes: #a3a3a3;
+  --tw-prose-quote-borders: #45BFFF;
+  --tw-prose-code: #7dd3fc;
+  --tw-prose-pre-code: #d4d4d4;
+  --tw-prose-pre-bg: rgba(255, 255, 255, 0.05);
+  --tw-prose-th-borders: rgba(255, 255, 255, 0.1);
+  --tw-prose-td-borders: rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================================
+   PDF Export - White theme overrides
+   Applied only during PDF generation via .pdf-export-mode class
+   Zero impact on the normal dark UI
+   ============================================================ */
+.pdf-export-mode {
+  background: #ffffff !important;
+  color: #111111 !important;
+  /* Reset Tailwind prose CSS variables to light-theme values */
+  --tw-prose-body: #333333 !important;
+  --tw-prose-headings: #111111 !important;
+  --tw-prose-links: #2563eb !important;
+  --tw-prose-bold: #111111 !important;
+  --tw-prose-counters: #6b7280 !important;
+  --tw-prose-bullets: #9ca3af !important;
+  --tw-prose-hr: #e5e7eb !important;
+  --tw-prose-quotes: #4b5563 !important;
+  --tw-prose-quote-borders: #2563eb !important;
+  --tw-prose-code: #0369a1 !important;
+  --tw-prose-pre-code: #1e293b !important;
+  --tw-prose-pre-bg: #f8fafc !important;
+  --tw-prose-th-borders: #d1d5db !important;
+  --tw-prose-td-borders: #d1d5db !important;
+}
+
+.pdf-export-mode.markdown-content {
+  color: #333333 !important;
+}
+
+.pdf-export-mode.markdown-content h1,
+.pdf-export-mode.markdown-content h2,
+.pdf-export-mode.markdown-content h3,
+.pdf-export-mode.markdown-content h4 {
+  color: #111111 !important;
+}
+
+.pdf-export-mode.markdown-content h1 {
+  border-bottom-color: #e5e7eb !important;
+}
+
+.pdf-export-mode.markdown-content h1::before,
+.pdf-export-mode.markdown-content h2::before {
+  background: #2563eb !important;
+}
+
+.pdf-export-mode.markdown-content strong {
+  color: #111111 !important;
+}
+
+.pdf-export-mode.markdown-content del {
+  color: #9ca3af !important;
+}
+
+.pdf-export-mode.markdown-content a {
+  color: #2563eb !important;
+}
+
+.pdf-export-mode.markdown-content code {
+  background: #f3f4f6 !important;
+  color: #0369a1 !important;
+}
+
+.pdf-export-mode.markdown-content pre {
+  background: #f8fafc !important;
+  color: #1e293b !important;
+  border-color: #e2e8f0 !important;
+}
+
+.pdf-export-mode.markdown-content pre code {
+  background: transparent !important;
+  color: #1e293b !important;
+}
+
+.pdf-export-mode.markdown-content blockquote {
+  color: #4b5563 !important;
+  border-color: #2563eb !important;
+  background: rgba(37, 99, 235, 0.05) !important;
+}
+
+.pdf-export-mode.markdown-content hr {
+  border-color: #e5e7eb !important;
+}
+
+.pdf-export-mode.markdown-content table thead {
+  background: #f9fafb !important;
+}
+
+.pdf-export-mode.markdown-content th {
+  color: #111111 !important;
+  border-color: #d1d5db !important;
+}
+
+.pdf-export-mode.markdown-content td {
+  color: #333333 !important;
+  border-color: #d1d5db !important;
+}
+
+.pdf-export-mode.markdown-content tbody tr:hover {
+  background: #f9fafb !important;
+}
+
+.pdf-export-mode .report-metadata {
+  background: #f9fafb !important;
+  border-color: #e5e7eb !important;
+}
+
+.pdf-export-mode .report-metadata > div {
+  background: #f3f4f6 !important;
+  color: #333333 !important;
+  border-color: #e5e7eb !important;
+}
+
+.pdf-export-mode .section-divider {
+  border-color: #e5e7eb !important;
+}
+
+.pdf-export-mode .sources-section {
+  border-color: rgba(37, 99, 235, 0.2) !important;
+}
+
+.pdf-export-mode .sources-section h2 {
+  color: #111111 !important;
+}
+
+.pdf-export-mode .sources-section h2::before {
+  background: #2563eb !important;
+}
+
+.pdf-export-mode .sources-section li a {
+  color: #2563eb !important;
+}
+
+.pdf-export-mode .sources-section .source-url {
+  color: #6b7280 !important;
+}
+
+/* ============================================================
+   PDF Page-break rules
+   Prevent text truncation across page boundaries
+   ============================================================ */
+
+/* Headings should never be separated from their following content */
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4 {
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+/* Avoid breaking inside these block-level elements */
+.markdown-content p,
+.markdown-content li,
+.markdown-content pre,
+.markdown-content blockquote,
+.markdown-content table,
+.markdown-content img {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Sources section should stay together when possible */
+.sources-section {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
